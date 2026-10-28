@@ -1,0 +1,38 @@
+@use './typhography' as t;
+@use './variables' as v;
+@mixin textH1 {
+	font-family: t.$fontHeader;
+	font-size: t.$fs-h1;
+	color: v.$color-text-primary;
+	line-height: 6rem;
+	margin-bottom: 2rem;
+}
+@mixin textH2 {
+	font-family: t.$fontHeader;
+	font-size: t.$fs-h2;
+	color: v.$color-text-primary;
+}
+@mixin textH3 {
+	font-family: t.$fontHeader;
+	font-size: t.$fs-h3;
+	color: v.$color-text-primary;
+}
+@mixin textP {
+	font-family: t.$fontText;
+	font-size: t.$fs-p;
+	color: v.$color-text-secondary;
+	font-weight: 500;
+	line-height: 2.2rem;
+}
+@mixin linkCTA {
+	font-family: t.$fontText;
+	font-size: t.$fs-p;
+	color: v.$color-text-white;
+	background-color: v.$color-bacground-nav;
+	text-decoration: none;
+	padding: 0.5rem 3rem;
+	transition: background-color 0.3 ease;
+	&:hover {
+		background-color: v.$color-background-nav-hover;
+	}
+}

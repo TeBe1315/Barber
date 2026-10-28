@@ -1,0 +1,15 @@
+@use '../abstract/variables' as v;
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: v.$color-backgrond;
+}

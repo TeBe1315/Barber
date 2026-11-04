@@ -31,7 +31,7 @@
 	background-color: v.$color-bacground-nav;
 	text-decoration: none;
 	padding: 0.5rem 3rem;
-	transition: background-color 0.3 ease;
+	transition: background-color 0.3s ease;
 	&:hover {
 		background-color: v.$color-background-nav-hover;
 	}

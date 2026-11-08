@@ -1,11 +1,16 @@
-@mixin gridOne{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+@mixin gridOne {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1rem;
 }
 
-@mixin gridTwo{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+@mixin gridTwo {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+@mixin gridThree {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
 }

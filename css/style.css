@@ -168,6 +168,109 @@ main section {
   width: 100%;
   padding: 3rem 2rem;
 }
+main .about-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+main .about-section .about-header .header-text h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: clamp(3.6rem, 3rem + 1.4vw, 4rem);
+  color: #242321;
+}
+main .about-section .about-header .header-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 1.55rem + 0.15vw, 1.8rem);
+  color: #625d57;
+  font-weight: 500;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+main .about-section .about-header a {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 1.55rem + 0.15vw, 1.8rem);
+  color: #f3eee7;
+  background-color: #d75f21;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  transition: background-color 0.3s ease;
+}
+main .about-section .about-header a:hover {
+  background-color: #b94f1d;
+}
+main .about-section .about-self {
+  position: relative;
+  height: 50vh;
+}
+main .about-section .about-self img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+main .about-section .about-self .self-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .about-section .about-self .self-text h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: clamp(3rem, 2.6rem + 1vw, 3.4rem);
+  color: #242321;
+  text-align: center;
+}
+main .about-section .about-self .self-text .works-boks {
+  width: 100%;
+}
+main .about-section .about-self .self-text .works-boks .work {
+  width: 100%;
+  padding: 1rem 0;
+}
+main .about-section .about-self .self-text .works-boks .work p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 1.55rem + 0.15vw, 1.8rem);
+  color: #625d57;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+main .about-section .about-info {
+  height: 50vh;
+  border: 0.1rem solid #000;
+}
+main .about-section .about-info .info-tool {
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 3rem;
+  background-color: #fff;
+}
+main .about-section .about-info .info-tool i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  color: #625d57;
+  border: 0.1rem solid #d75f21;
+}
+main .about-section .about-info .info-contact {
+  height: 50%;
+}
+
 @media (min-width: 576px) and (max-width: 768px) {
   header .header-text {
     width: 90%;
